@@ -3,7 +3,7 @@ def map(array)
   arr = []
   
   while i < array.length do
-    array.map{|number| number * -1}
+    arr.push(array[i] * -1)
   end
     return arr
 end
