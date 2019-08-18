@@ -3,7 +3,11 @@ def map(array)
   arr = []
   
   while i < array.length do
-    arr.push(array[i] * -1)
+    arr.push(yield(array[i]))
+    i += 1
   end
     return arr
 end
+
+
+def my_own_reduce(array, num = nil)
